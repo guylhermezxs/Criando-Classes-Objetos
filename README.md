@@ -1,0 +1,1 @@
+Este repositório contém exemplos de como criar e utilizar classes e objetos em Java. Os códigos foram desenvolvidos com o objetivo de desenvolver os conceitos de programação orientada a objetos (POO), incluindo atributos, métodos, instância de objetos e boas práticas de encapsulamento.
