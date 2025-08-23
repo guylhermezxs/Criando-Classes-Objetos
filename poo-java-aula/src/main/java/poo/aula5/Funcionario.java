@@ -1,13 +1,13 @@
 package poo.aula5;
 
 public class Funcionario {
-    private String id;
+    private int id;
     private String nome;
     private double salario;
     private Setor setor;
     private Sexo sexo;
 
-    public Funcionario(String id, String nome, double salario, Setor setor, Sexo sexo) {
+    public Funcionario(int id, String nome, double salario, Setor setor, Sexo sexo) {
         this.id = id;
         this.nome = nome;
         this.salario = salario;
@@ -15,11 +15,11 @@ public class Funcionario {
         this.sexo = sexo;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -57,12 +57,12 @@ public class Funcionario {
 
     @Override
     public String toString() {
-        return "Funcionario{" +
-                "id='" + id + '\'' +
-                ", nome='" + nome + '\'' +
-                ", salario=" + salario +
-                ", setor=" + setor +
-                ", sexo=" + sexo +
-                '}';
+        return "Funcionario [" +
+                "ID = " + id +
+                ", Nome = " + nome + '\'' +
+                ", Salario = " + salario +
+                ", Setor = " + setor +
+                ", Sexo = " + sexo +
+                ']';
     }
 }

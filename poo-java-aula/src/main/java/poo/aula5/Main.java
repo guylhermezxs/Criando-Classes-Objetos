@@ -1,6 +1,6 @@
 package poo.aula5;
 
-import poo.aula4.Cliente;
+
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -12,8 +12,10 @@ public class Main {
 
         int opcao;
         int opcaoSetor, opcaoSexo;
+        int quantidadeFuncionarios = 0;
 
         do{
+            System.out.println("\n");
             System.out.println("Menu: ");
             System.out.println("1 | Cadastrar Funcionario");
             System.out.println("2 | Exibir Funcionarios");
@@ -29,6 +31,7 @@ public class Main {
                     for(int i = 0 ; i < numFuncionarios; i++){
                         System.out.println("Informe o Id do Funcionário:");
                         int id = sc.nextInt();
+                        sc.nextLine();
                         System.out.println("Informe o Nome do Funcionário:");
                         String nome = sc.nextLine();
                         System.out.println("Informe o Salário do Funcionário:");
@@ -43,16 +46,23 @@ public class Main {
 
                         Setor setor;
 
-                        if (opcaoSetor == 1){
-                            setor = Setor.FINANCEIRO;
-                        } else if (opcaoSetor == 2) {
-                            setor = Setor.RECURSOS_HUMANOS;
-                        } else if (opcaoSetor == 3) {
-                            setor = Setor.VENDAS;
-                        } else if (opcaoSetor == 4) {
-                            setor = Setor.MARKETING;
-                        } else {
-                            System.out.println("Valor invalido!");
+                        switch (opcaoSetor){
+                            case 1:
+                                setor = Setor.FINANCEIRO;
+                                break;
+                            case 2:
+                                setor = Setor.RECURSOS_HUMANOS;
+                                break;
+                            case 3:
+                                setor = Setor.VENDAS;
+                                break;
+                            case 4:
+                                setor = Setor.MARKETING;
+                                break;
+                            default:
+                                System.out.println("Opção inválida! Usando FINACEIRO como padrão.");
+                                setor = Setor.FINANCEIRO;
+                                break;
                         }
 
                         System.out.println("Sexo:");
@@ -63,18 +73,41 @@ public class Main {
 
                         Sexo sexo;
 
-                        if (opcaoSetor == 1){
-                            sexo = Sexo.MASCULINO;
-                        } else if (opcaoSetor == 2) {
-                            sexo = Sexo.FEMININO;
-                        } else {
-                            System.out.println("Valor invalido!");
+                        switch (opcaoSexo){
+                            case 1:
+                                sexo = Sexo.MASCULINO;
+                                break;
+                            case 2:
+                                sexo = Sexo.FEMININO;
+                                break;
+                            default:
+                                System.out.println("Opção inválida! Usando MASCULINO como padrão.");
+                                sexo = Sexo.MASCULINO;
+                                break;
                         }
 
                         Funcionario funcionario = new Funcionario(id,nome,salario, setor , sexo);
+                        listaFuncionario.add(funcionario);
+                        quantidadeFuncionarios++;
                     }
+                    break;
+                case 2:
+                    if (quantidadeFuncionarios == 0){
+                        System.out.println("Cadastre um funcionário para exibir as informações!");
+                    } else {
+                        for ( Funcionario funcionario : listaFuncionario){
+                            System.out.println(funcionario);
+                        }
+                    }
+                    break;
+                case 3:
+                    System.out.println("Saindo...");
+                    break;
+
+                default:
+                    System.out.println("Valor Invalido. Tente novamente!");
             }
 
-        }while(opcao != 3);
+        } while(opcao != 3);
     }
 }
