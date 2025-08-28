@@ -1,10 +1,7 @@
 package poo.aula5;
 
-
-
 import java.util.ArrayList;
 import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -29,7 +26,7 @@ public class Main {
                     int numFuncionarios = sc.nextInt();
 
                     for(int i = 0 ; i < numFuncionarios; i++){
-                        System.out.println("Informe o Id do Funcionário:");
+                        System.out.println("Informe o ID do Funcionário:");
                         int id = sc.nextInt();
                         sc.nextLine();
                         System.out.println("Informe o Nome do Funcionário:");

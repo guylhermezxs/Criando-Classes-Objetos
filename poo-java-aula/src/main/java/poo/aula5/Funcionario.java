@@ -59,10 +59,10 @@ public class Funcionario {
     public String toString() {
         return "Funcionario [" +
                 "ID = " + id +
-                ", Nome = " + nome + '\'' +
+                ", Nome = " + nome + '\n' +
                 ", Salario = " + salario +
-                ", Setor = " + setor +
-                ", Sexo = " + sexo +
+                ", Setor = " + setor.getNome() +
+                ", Sexo = " + sexo.getSexo() +
                 ']';
     }
 }

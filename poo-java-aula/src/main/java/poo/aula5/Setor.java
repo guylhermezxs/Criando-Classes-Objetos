@@ -1,11 +1,18 @@
 package poo.aula5;
 
 public enum Setor {
-    FINANCEIRO,
-    RECURSOS_HUMANOS,
-    VENDAS,
-    MARKETING
+    FINANCEIRO("Financeiro"),
+    RECURSOS_HUMANOS("Recursos Humanos"),
+    VENDAS("Vendas"),
+    MARKETING("Marketing");
 
+    private String nome;
 
+    Setor(String nome) {
+        this.nome = nome;
+    }
 
+    public String getNome() {
+        return nome;
+    }
 }
