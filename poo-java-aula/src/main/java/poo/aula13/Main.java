@@ -9,8 +9,15 @@ public class Main {
         Diretor diretor = new Diretor("Leonardo","23/09/2001",Sexo.MASCULINO,Setor.FINANCEIRO,4500);
         Motoboy motoboy = new Motoboy("João","17/04/1999",Sexo.MASCULINO,Setor.OPERACOES,1500,"57228305689");
 
+        System.out.println();
         System.out.println("Motoboy: " + motoboy);
         diretor.admitir(motoboy);
         System.out.println("Pelo diretor: " + diretor);
+
+        double salarioMotoboy = motoboy.getSalarioFinal();
+        double salarioDiretor = diretor.getSalarioFinal();
+
+        System.out.println("Salário do motoboy: " + salarioMotoboy);
+        System.out.println("Salário do diretor: " + salarioDiretor);
     }
 }

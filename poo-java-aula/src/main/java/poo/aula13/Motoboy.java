@@ -21,8 +21,8 @@ public class Motoboy extends Funcionario {
         return "Motoboy [" +
                 "Nome = " + nome + '\'' +
                 ", Data Nascimento = " + dataNascimento + '\'' +
-                ", Sexo = " + sexo +
-                ", Setor = " + setor +
+                ", Sexo = " + sexo.getSexo() +
+                ", Setor = " + setor.getSetor() +
                 ", Salario Base = " + salarioBase +
                 ", Carteira Habilitação = " + carteiraHabilitacao + '\'' +
                 ']';
@@ -30,6 +30,6 @@ public class Motoboy extends Funcionario {
 
     @Override
     public double getSalarioFinal() {
-        return salarioBase;
+        return super.salarioBase;
     }
 }

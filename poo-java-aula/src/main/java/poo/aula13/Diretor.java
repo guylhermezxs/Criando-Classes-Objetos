@@ -16,8 +16,8 @@ public class Diretor extends Funcionario implements Contratacao {
         return "Diretor [" +
                 "Nome = " + nome + '\'' +
                 ", Data de Nascimento = " + dataNascimento + '\'' +
-                ", Sexo = " + sexo +
-                ", Setor = " + setor +
+                ", Sexo = " + sexo.getSexo() +
+                ", Setor = " + setor.getSetor() +
                 ", Salario Base = " + salarioBase +
                 ", Premio = " + PREMIO +
                 ']';
@@ -35,6 +35,8 @@ public class Diretor extends Funcionario implements Contratacao {
 
     @Override
     public double getSalarioFinal() {
-        return salarioBase + (salarioBase * getPREMIO());
+        return super.salarioBase + (super.salarioBase * this.PREMIO);
     }
+
+
 }
