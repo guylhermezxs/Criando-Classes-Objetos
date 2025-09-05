@@ -2,8 +2,8 @@ package poo.aula14;
 
 public class Gerente extends CargoDeConfianca implements Contratacao {
 
-    public Gerente(String nome, String cpf, String dataNascimneto, double salarioBase, Bonificacao bonficacao) {
-        super(nome, cpf, dataNascimneto, salarioBase, bonficacao);
+    public Gerente(String nome, String cpf, String dataNascimento, double salarioBase, Bonificacao bonificacao) {
+        super(nome, cpf, dataNascimento, salarioBase, bonificacao);
     }
 
     @Override
@@ -26,9 +26,9 @@ public class Gerente extends CargoDeConfianca implements Contratacao {
         return "Gerente [" +
                 "Nome = " + nome + '\'' +
                 ", CPF = " + cpf + '\'' +
-                ", Data Nascimneto = " + dataNascimento + '\'' +
+                ", Data Nascimento = " + dataNascimento + '\'' +
                 ", Salário Base ="  + salarioBase +
-                ", Bonficação = " + bonficacao +
+                ", Bonficação = " + bonificacao +
                 ']';
     }
 }

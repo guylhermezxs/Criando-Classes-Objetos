@@ -1,18 +1,18 @@
 package poo.aula14;
 
 public abstract class CargoDeConfianca extends Funcionario {
-    protected Bonificacao bonficacao;
+    protected Bonificacao bonificacao;
 
-    public CargoDeConfianca(String nome, String cpf, String dataNascimneto, double salarioBase, Bonificacao bonficacao) {
+    public CargoDeConfianca(String nome, String cpf, String dataNascimneto, double salarioBase, Bonificacao bonificacao) {
         super(nome, cpf, dataNascimneto, salarioBase);
-        this.bonficacao = bonficacao;
+        this.bonificacao = bonificacao;
     }
 
     public Bonificacao getBonficacao() {
-        return bonficacao;
+        return bonificacao;
     }
 
-    public void setBonficacao(Bonificacao bonficacao) {
-        this.bonficacao = bonficacao;
+    public void setBonficacao(Bonificacao bonificacao) {
+        this.bonificacao = bonificacao;
     }
 }

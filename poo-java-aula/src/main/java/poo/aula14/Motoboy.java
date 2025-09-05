@@ -3,8 +3,8 @@ package poo.aula14;
 public class Motoboy extends Funcionario {
     private String placaDaMoto;
 
-    public Motoboy(String nome, String cpf, String dataNascimneto, double salarioBase, String placaDaMoto) {
-        super(nome, cpf, dataNascimneto, salarioBase);
+    public Motoboy(String nome, String cpf, String dataNascimento, double salarioBase, String placaDaMoto) {
+        super(nome, cpf, dataNascimento, salarioBase);
         this.placaDaMoto = placaDaMoto;
     }
 
@@ -26,8 +26,8 @@ public class Motoboy extends Funcionario {
         return "Motoboy [" +
                 "Nome = " + nome + '\'' +
                 ", CPF = " + cpf + '\'' +
-                ", Data Nascimneto = " + dataNascimento + '\'' +
-                ", Salario Base = " + salarioBase +
+                ", Data Nascimento = " + dataNascimento + '\'' +
+                ", Salário Base = " + salarioBase +
                 ", Placa Da Moto = " + placaDaMoto + '\'' +
                 ']';
     }
