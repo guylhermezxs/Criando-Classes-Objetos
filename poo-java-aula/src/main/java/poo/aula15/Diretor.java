@@ -3,7 +3,7 @@ package poo.aula15;
 import java.time.LocalDate;
 
 public class Diretor extends CargoDeConfianca implements Contratacao {
-    private final double PREMIO = 0.1;
+    private final double PREMIO = 1.1;
 
     public Diretor(String nome, String cpf, Genero genero, double salarioBase, String dataNascimento, String dataAdmissao, Bonificacao bonificacao) {
         super(nome, cpf, genero, salarioBase, dataNascimento, dataAdmissao, bonificacao);

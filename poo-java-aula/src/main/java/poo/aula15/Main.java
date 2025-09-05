@@ -5,7 +5,7 @@ public class Main {
 
         Diretor diretor = new Diretor("Rafael","778.444.345-67",Genero.MASCULINO,5600,"23/04/1979","23/03/2001",Bonificacao.DIRETOR);
         Motoboy motoboy = new Motoboy("Cezar","778.333.234-89",Genero.MASCULINO,2300,"12/11/2002","22/02/2022","ERT-7656");
-        Gerente gerente = new Gerente("Letícia","755.233.124-76",Genero.MASCULINO, 3500, "22/12/1998","22/08/2015",Bonificacao.GERENTE);
+        Gerente gerente = new Gerente("Letícia","755.233.124-76",Genero.FEMININO, 3500, "22/12/1998","22/08/2015",Bonificacao.GERENTE);
 
 
         System.out.println();
