@@ -8,11 +8,11 @@ public abstract class CargoDeConfianca extends Funcionario {
         this.bonificacao = bonificacao;
     }
 
-    public Bonificacao getBonficacao() {
+    public Bonificacao getBonificacao() {
         return bonificacao;
     }
 
-    public void setBonficacao(Bonificacao bonificacao) {
+    public void setBonificacao(Bonificacao bonificacao) {
         this.bonificacao = bonificacao;
     }
 }

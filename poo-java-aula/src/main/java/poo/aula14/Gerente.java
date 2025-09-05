@@ -28,7 +28,7 @@ public class Gerente extends CargoDeConfianca implements Contratacao {
                 ", CPF = " + cpf + '\'' +
                 ", Data Nascimento = " + dataNascimento + '\'' +
                 ", Salário Base ="  + salarioBase +
-                ", Bonficação = " + bonificacao +
+                ", Bonficação = " + bonificacao.getValor() +
                 ']';
     }
 }
