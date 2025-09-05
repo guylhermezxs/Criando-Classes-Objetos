@@ -1,8 +1,8 @@
 package poo.aula15;
 
 public enum Bonificacao {
-    GERENTE(0.2),
-    DIRETOR(0.4);
+    GERENTE(1.2),
+    DIRETOR(1.4);
 
     private double valor;
 

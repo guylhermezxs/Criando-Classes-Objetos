@@ -7,10 +7,10 @@ public abstract class Funcionario implements SalarioFinal {
     protected String cpf;
     protected Genero genero;
     protected double salarioBase;
-    protected LocalDate dataNascimento;
-    protected LocalDate dataAdmissao;
+    protected String dataNascimento;
+    protected String dataAdmissao;
 
-    public Funcionario(String nome, String cpf, Genero genero, double salarioBase, LocalDate dataNascimento, LocalDate dataAdmissao) {
+    public Funcionario(String nome, String cpf, Genero genero, double salarioBase, String dataNascimento, String dataAdmissao) {
         this.nome = nome;
         this.cpf = cpf;
         this.genero = genero;
@@ -51,24 +51,19 @@ public abstract class Funcionario implements SalarioFinal {
         this.salarioBase = salarioBase;
     }
 
-    public LocalDate getDataNascimento() {
+    public String getDataNascimento() {
         return dataNascimento;
     }
 
-    public void setDataNascimento(LocalDate dataNascimento) {
+    public void setDataNascimento(String dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
 
-    public LocalDate getDataAdmissao() {
+    public String getDataAdmissao() {
         return dataAdmissao;
     }
 
-    public void setDataAdmissao(LocalDate dataAdmissao) {
+    public void setDataAdmissao(String dataAdmissao) {
         this.dataAdmissao = dataAdmissao;
     }
-
-    public int getIdade(){
-        return 0;
-    }
-
 }

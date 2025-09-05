@@ -5,7 +5,7 @@ import java.time.LocalDate;
 public class Diretor extends CargoDeConfianca implements Contratacao {
     private final double PREMIO = 0.1;
 
-    public Diretor(String nome, String cpf, Genero genero, double salarioBase, LocalDate dataNascimento, LocalDate dataAdmissao, Bonificacao bonificacao) {
+    public Diretor(String nome, String cpf, Genero genero, double salarioBase, String dataNascimento, String dataAdmissao, Bonificacao bonificacao) {
         super(nome, cpf, genero, salarioBase, dataNascimento, dataAdmissao, bonificacao);
     }
 
@@ -25,7 +25,7 @@ public class Diretor extends CargoDeConfianca implements Contratacao {
 
     @Override
     public double getSalarioFinal() {
-        return salarioBase * Bonificacao.DIRETOR.getValor();
+        return this.salarioBase  * Bonificacao.DIRETOR.getValor();
     }
 
     @Override

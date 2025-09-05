@@ -5,7 +5,7 @@ import java.time.LocalDate;
 public class Motoboy extends Funcionario {
     private String placaDaMoto;
 
-    public Motoboy(String nome, String cpf, Genero genero, double salarioBase, LocalDate dataNascimento, LocalDate dataAdmissao, String placaDaMoto) {
+    public Motoboy(String nome, String cpf, Genero genero, double salarioBase, String dataNascimento, String dataAdmissao, String placaDaMoto) {
         super(nome, cpf, genero, salarioBase, dataNascimento, dataAdmissao);
         this.placaDaMoto = placaDaMoto;
     }
@@ -20,13 +20,13 @@ public class Motoboy extends Funcionario {
 
     @Override
     public double getSalarioFinal() {
-        return 0;
+        return this.salarioBase;
     }
 
     @Override
     public String toString() {
         return "Motoboy [" +
-                "Nome =" + nome + '\'' +
+                "Nome = " + nome + '\'' +
                 ", CPF = " + cpf + '\'' +
                 ", Genero = " + genero.getGenero() +
                 ", Salário Base = " + salarioBase +

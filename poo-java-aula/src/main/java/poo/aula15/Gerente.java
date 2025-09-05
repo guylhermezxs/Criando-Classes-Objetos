@@ -4,13 +4,14 @@ import java.time.LocalDate;
 
 public class Gerente extends CargoDeConfianca {
 
-    public Gerente(String nome, String cpf, Genero genero, double salarioBase, LocalDate dataNascimento, LocalDate dataAdmissao, Bonificacao bonificacao) {
+    public Gerente(String nome, String cpf, Genero genero, double salarioBase, String dataNascimento, String dataAdmissao, Bonificacao bonificacao) {
         super(nome, cpf, genero, salarioBase, dataNascimento, dataAdmissao, bonificacao);
     }
 
+
     @Override
     public double getSalarioFinal() {
-        return salarioBase * Bonificacao.GERENTE.getValor();
+        return this.salarioBase * Bonificacao.GERENTE.getValor();
     }
 
     @Override
