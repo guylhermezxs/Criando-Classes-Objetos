@@ -9,12 +9,12 @@ public class Main {
         System.out.println();
         System.out.println("Motoboy: " + motoboy);
         gerente.admitir(motoboy);
-        System.out.println("Foi contratado pelo gerente: " + gerente);
+        System.out.println("Contratado pelo gerente: " + gerente);
 
         double salarioMotoboy = motoboy.obterSalarioFinal();
         double salarioGerente = gerente.obterSalarioFinal();
 
-        System.out.println("Salário do Motoboy: " + salarioMotoboy);
-        System.out.println("Salário do Gerente: " + salarioGerente);
+        System.out.println("Salário final do Motoboy: " + salarioMotoboy);
+        System.out.println("Salário final do Gerente: " + salarioGerente);
     }
 }
